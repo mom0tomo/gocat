@@ -21,7 +21,7 @@ func main() {
 	log.SetPrefix("gocat: ")
 	log.SetFlags(0)
 	flag.Usage = usage
-	flag.Parsegi()
+	flag.Parse()
 
 	if flag.NArg() == 0 {
 		read(os.Stdin)
